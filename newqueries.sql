@@ -33,7 +33,7 @@ JOIN `degrees`
 ON `departments`.`id` = `degrees`.`department_id` 
 JOIN `students`
 ON `degrees`.`id` = `students`.`degree_id`  
-ORDER BY `Cognome` ASC
+ORDER BY `students.name` , `students.surname` ASC;
 
 --5. Selezionare tutti i corsi di laurea con i relativi corsi e insegnanti
 
